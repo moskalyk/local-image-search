@@ -270,7 +270,7 @@ class Search extends React.Component<any> {
 }
 
 
-const fileTypes = ["JPG", "PNG", "GIF"];
+const fileTypes = ["JPG", "PNG", "GIF","JPEG"];
 
 function DragDrop(props: any) {
   const [_, setFile] = useState< any>(null);
