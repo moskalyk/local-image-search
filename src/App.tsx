@@ -203,7 +203,7 @@ class Search extends React.Component<any> {
           })
         })
 
-        const arr = _.orderBy(toBeSorted, ['cosine'], ['desc']).filter((el: any) => el.cosine > 0.9)
+        const arr = toBeSorted.sort((a: any, b: any) => parseFloat(b.cosine) - parseFloat(a.cosine)).filter((el: any) => el.cosine > 0.9)
         console.log(arr);
 
         // @ts-ignore
